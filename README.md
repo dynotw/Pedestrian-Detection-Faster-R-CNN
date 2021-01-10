@@ -134,7 +134,7 @@ Specify the specific model session, chechepoch and checkpoint, e.g., SESSION=1, 
 
 
 ## Demo
-
+### Image
 If you want to run detection on your own images with a pre-trained model, download the pretrained model listed in above tables or train your own models at first, then add images to folder $ROOT/images, and then run
 ```
 python demo.py --net vgg16 \
@@ -152,7 +152,7 @@ Below are some detection results:
 <img src="images/1.jpg" width="430"/> <img src="images/2.jpg" width="430"/>
 </div>
 
-## Webcam Demo
+### Webcam or Video
 
 You can use a webcam in a real-time demo by running
 ```
@@ -162,24 +162,4 @@ python demo.py --net vgg16 \
                --webcam $WEBCAM_ID
 ```
 The demo is stopped by clicking the image window and then pressing the 'q' key.
-
-## Authorship
-
-This project is equally contributed by [Jianwei Yang](https://github.com/jwyang) and [Jiasen Lu](https://github.com/jiasenlu), and many others (thanks to them!).
-
-## Citation
-
-    @article{jjfaster2rcnn,
-        Author = {Jianwei Yang and Jiasen Lu and Dhruv Batra and Devi Parikh},
-        Title = {A Faster Pytorch Implementation of Faster R-CNN},
-        Journal = {https://github.com/jwyang/faster-rcnn.pytorch},
-        Year = {2017}
-    }
-
-    @inproceedings{renNIPS15fasterrcnn,
-        Author = {Shaoqing Ren and Kaiming He and Ross Girshick and Jian Sun},
-        Title = {Faster {R-CNN}: Towards Real-Time Object Detection
-                 with Region Proposal Networks},
-        Booktitle = {Advances in Neural Information Processing Systems ({NIPS})},
-        Year = {2015}
-    }
+[Here my result](https://drive.google.com/file/d/1gWL_ybrueo-FinOdpzqCT4LVdA07PZEm/view?usp=sharing)
