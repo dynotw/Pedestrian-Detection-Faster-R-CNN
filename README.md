@@ -2,7 +2,7 @@
 
 ## Introduction
 
-### These codes are highly modified from [jwyang/faster-rcnn.pytorch](https://github.com/jwyang/faster-rcnn.pytorch) to apply on Pedestrian Detection
+### These codes are modified from [jwyang/faster-rcnn.pytorch](https://github.com/jwyang/faster-rcnn.pytorch) to apply on Pedestrian Detection
 
 Recently, there are a number of useful implementations of Faster R-CNN:
 
@@ -14,7 +14,7 @@ Recently, there are a number of useful implementations of Faster R-CNN:
 
 * [ruotianluo/pytorch-faster-rcnn](https://github.com/ruotianluo/pytorch-faster-rcnn), developed based on Pytorch + TensorFlow + Numpy
 
-During our implementing, we referred the above implementations, especially [longcw/faster_rcnn_pytorch](https://github.com/longcw/faster_rcnn_pytorch). However, our implementation has several unique and new features compared with the above implementations:
+In the implementing of [jwyang/faster-rcnn.pytorch](https://github.com/jwyang/faster-rcnn.pytorch), there're several unique and new features compared with the above implementations:
 
 * **It is pure Pytorch code**. We convert all the numpy implementations to pytorch!
 
