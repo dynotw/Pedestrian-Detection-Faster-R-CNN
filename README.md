@@ -113,6 +113,8 @@ cd faster-rcnn.pytorch && mkdir data
 ```
 
 ### DataSet Preparation
+Due to size of dataset, I can't store it in my Google Drive, so I can't provide processed dataset for you. If you meet any probelm, you can contact me.
+
 Because we only care about pedestrian detection scenario, we only use pedestrian dataset provided by Caltech. In order to simplify this application, I only do binary classification, person or background, thus I only keep 'person' label in Caltech Pedestrian Dataset.
 
 We need to pre-process Caltech Pedestrain Dataset by the following steps:
@@ -133,25 +135,15 @@ We need to pre-process Caltech Pedestrain Dataset by the following steps:
 
 * Please make sure .jpg files, .xml files and .txt files are match with each other.
 
-* **PASCAL_VOC 07+12**: Please follow the instructions in [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn#beyond-the-demo-installation-for-training-and-testing-models) to prepare VOC datasets. Actually, you can refer to any others. After downloading the data, creat softlinks in the folder data/.
-
-* **COCO**: Please also follow the instructions in [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn#beyond-the-demo-installation-for-training-and-testing-models) to prepare the data.
-
-* **Visual Genome**: Please follow the instructions in [bottom-up-attention](https://github.com/peteanderson80/bottom-up-attention) to prepare Visual Genome dataset. You need to download the images and object annotation files first, and then perform proprecessing to obtain the vocabulary and cleansed annotations based on the scripts provided in this repository.
-
 ### Pretrained Model
 
-We used two pretrained models in our experiments, VGG and ResNet101. You can download these two models from:
+I used two pretrained models in [jwyang/faster-rcnn.pytorch](https://github.com/jwyang/faster-rcnn.pytorch) experiments, VGG and ResNet101. You can download these two models from:
 
 * VGG16: [Dropbox](https://www.dropbox.com/s/s3brpk0bdq60nyb/vgg16_caffe.pth?dl=0), [VT Server](https://filebox.ece.vt.edu/~jw2yang/faster-rcnn/pretrained-base-models/vgg16_caffe.pth)
 
 * ResNet101: [Dropbox](https://www.dropbox.com/s/iev3tkbz5wyyuz9/resnet101_caffe.pth?dl=0), [VT Server](https://filebox.ece.vt.edu/~jw2yang/faster-rcnn/pretrained-base-models/resnet101_caffe.pth)
 
 Download them and put them into the data/pretrained_model/.
-
-**NOTE**. We compare the pretrained models from Pytorch and Caffe, and surprisingly find Caffe pretrained models have slightly better performance than Pytorch pretrained. We would suggest to use Caffe pretrained models from the above link to reproduce our results.
-
-**If you want to use pytorch pre-trained models, please remember to transpose images from BGR to RGB, and also use the same data transformer (minus mean and normalize) as used in pretrained model.**
 
 ### Compilation
 
