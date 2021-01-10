@@ -1,4 +1,4 @@
-# A Pytorch Implementation of Faster R-CNN Apply on Pedestrian Detection
+# Faster R-CNN (Pytorch) on Pedestrian Detection
 
 ## Introduction
 
