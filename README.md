@@ -102,6 +102,7 @@ Thanks to [Remi](https://github.com/Cadene) for providing the pretrained detecti
 Sorry for the Docker file missed
 
 ## Preparation
+### Download codes
 Firstly, clone the code
 ```
 git clone https://github.com/dynotw/Pedestrian-Detection-Faster-R-CNN.git
@@ -112,7 +113,7 @@ Then, create a folder:
 cd faster-rcnn.pytorch && mkdir data
 ```
 
-### DataSet Preparation
+### DataSet
 Due to size of dataset, I can't store it in my Google Drive, so I can't provide processed dataset for you. If you meet any probelm, you can contact me.
 
 Because we only care about pedestrian detection scenario, we only use pedestrian dataset provided by Caltech. In order to simplify this application, I only do binary classification, person or background, thus I only keep 'person' label in Caltech Pedestrian Dataset.
@@ -124,9 +125,9 @@ We need to pre-process Caltech Pedestrain Dataset by the following steps:
 * Make train, valid, test dataset, by generating train,txt, valid.text and test.txt to imply which .jpg and .xxml in each dataset.
 * Put the above files into respective directory
 
-## File Structure
+### File Structure
 ```
-|Dataset                          <- Contains all 
+|VOCdevkit                        <- Contains all 
 |   |Annotations                  <- Contains .xml files 
 |   |JPEGImages                   <- Contains .jpg files 
 |   |ImagegSets
@@ -144,6 +145,7 @@ I used two pretrained models in [jwyang/faster-rcnn.pytorch](https://github.com/
 * ResNet101: [Dropbox](https://www.dropbox.com/s/iev3tkbz5wyyuz9/resnet101_caffe.pth?dl=0), [VT Server](https://filebox.ece.vt.edu/~jw2yang/faster-rcnn/pretrained-base-models/resnet101_caffe.pth)
 
 Download them and put them into the data/pretrained_model/.
+
 
 ### Compilation
 
@@ -167,7 +169,7 @@ It will compile all the modules you need, including NMS, ROI_Pooing, ROI_Align a
 
 Before training, set the right directory to save and load the trained models. Change the arguments "save_dir" and "load_dir" in trainval_net.py and test_net.py to adapt to your environment.
 
-To train a faster R-CNN model with vgg16 on pascal_voc, simply run:
+To train a faster R-CNN model with vgg16 on pascal_voc, simply run (Please notice dataset name in the command):
 ```
 CUDA_VISIBLE_DEVICES=$GPU_ID python trainval_net.py \
                    --dataset pascal_voc --net vgg16 \
@@ -194,7 +196,6 @@ python trainval_net.py --dataset pascal_voc --net vgg16 \
 
 ```
 
-Change dataset to "coco" or 'vg' if you want to train on COCO or Visual Genome.
 
 ## Test
 
@@ -205,6 +206,7 @@ python test_net.py --dataset pascal_voc --net vgg16 \
                    --cuda
 ```
 Specify the specific model session, chechepoch and checkpoint, e.g., SESSION=1, EPOCH=6, CHECKPOINT=416.
+
 
 ## Demo
 
