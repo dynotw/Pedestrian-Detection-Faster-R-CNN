@@ -2,7 +2,7 @@
 
 ## Introduction
 
-### These codes are modified from [jwyang/faster-rcnn.pytorch](https://github.com/jwyang/faster-rcnn.pytorch) to apply on Pedestrian Detection
+### These codes are highly based on [jwyang/faster-rcnn.pytorch](https://github.com/jwyang/faster-rcnn.pytorch), and modify it to apply on Pedestrian Detection
 
 Recently, there are a number of useful implementations of Faster R-CNN:
 
