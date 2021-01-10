@@ -154,7 +154,7 @@ python demo.py --net vgg16 \
 
 Then you will find the detection results in folder $ROOT/images.
 
-** If you need to apply on different dataset, please change the demp.py, in terms of categories. Note the default demo.py merely support pascal_voc categories. You need to change the [Here] https://github.com/dynotw/Pedestrian-Detection-Faster-R-CNN/blob/master/demo.py#L179) to adapt your own model.**
+** If you need to apply on different dataset, please change the demp.py, especially [Here](https://github.com/dynotw/Pedestrian-Detection-Faster-R-CNN/blob/master/demo.py#L179) in terms of categories. [Here](https://github.com/dynotw/Pedestrian-Detection-Faster-R-CNN/blob/master/demo.py#L179)**
 
 Below are some detection results:
 
