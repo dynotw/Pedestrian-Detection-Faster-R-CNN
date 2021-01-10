@@ -94,9 +94,10 @@ Thanks to [Remi](https://github.com/Cadene) for providing the pretrained detecti
 * If not mentioned, the GPU we used is NVIDIA Titan X Pascal (12GB).
 
 ## Enviroment
-* Python 3.6 above
-* Pytorch 1.0 above
-* CUDA 8.0 above
+* Python 3.6
+* Pytorch 1.0
+* CUDA 9.2 
+* Opencv 3.4
 
 Sorry for the Docker file missed
 
@@ -114,11 +115,22 @@ cd faster-rcnn.pytorch && mkdir data
 ### DataSet Preparation
 Because we only care about pedestrian detection scenario, we only use pedestrian dataset provided by Caltech. In order to simplify this application, I only do binary classification, person or background, thus I only keep 'person' label in Caltech Pedestrian Dataset.
 
-We nned to pre-process Caltech Pedestrain Dataset by the following steps:
+We need to pre-process Caltech Pedestrain Dataset by the following steps:
 
 * Transfer .seq file into .jpg image
 * Transfer .vbb file into .xml file. Please notice I only keep 'person' label
 * Make train, valid, test dataset, by generating train,txt, valid.text and test.txt to imply which .jpg and .xxml in each dataset.
+* Put the above files into respective directory
+
+## File Structure
+```
+|Dataset                          <- Contains all 
+|   |Annotations                  <- Contains .xml files 
+|   |JPEGImages                   <- Contains .jpg files 
+|   |ImagegSets
+|       |Main                     <- Contains .txt files 
+```
+
 
 * **PASCAL_VOC 07+12**: Please follow the instructions in [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn#beyond-the-demo-installation-for-training-and-testing-models) to prepare VOC datasets. Actually, you can refer to any others. After downloading the data, creat softlinks in the folder data/.
 
