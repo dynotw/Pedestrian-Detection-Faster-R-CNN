@@ -131,6 +131,7 @@ We need to pre-process Caltech Pedestrain Dataset by the following steps:
 |       |Main                     <- Contains .txt files 
 ```
 
+* Please make sure .jpg files, .xml files and .txt files are match with each other.
 
 * **PASCAL_VOC 07+12**: Please follow the instructions in [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn#beyond-the-demo-installation-for-training-and-testing-models) to prepare VOC datasets. Actually, you can refer to any others. After downloading the data, creat softlinks in the folder data/.
 
