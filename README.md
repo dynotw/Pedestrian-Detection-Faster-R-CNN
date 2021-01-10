@@ -111,7 +111,14 @@ Then, create a folder:
 cd faster-rcnn.pytorch && mkdir data
 ```
 
-### Data Preparation
+### DataSet Preparation
+Because we only care about pedestrian detection scenario, we only use pedestrian dataset provided by Caltech. In order to simplify this application, I only do binary classification, person or background, thus I only keep 'person' label in Caltech Pedestrian Dataset.
+
+We nned to pre-process Caltech Pedestrain Dataset by the following steps:
+
+* Transfer .seq file into .jpg image
+* Transfer .vbb file into .xml file. Please notice I only keep 'person' label
+* Make train, valid, test dataset, by generating train,txt, valid.text and test.txt to imply which .jpg and .xxml in each dataset.
 
 * **PASCAL_VOC 07+12**: Please follow the instructions in [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn#beyond-the-demo-installation-for-training-and-testing-models) to prepare VOC datasets. Actually, you can refer to any others. After downloading the data, creat softlinks in the folder data/.
 
