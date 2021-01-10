@@ -47,8 +47,9 @@ In the implementing of [jwyang/faster-rcnn.pytorch](https://github.com/jwyang/fa
 * [Blog](http://www.telesens.co/2018/03/11/object-detection-and-classification-using-r-cnns/) by [ankur6ue](https://github.com/ankur6ue)
 
 ## Benchmarking
-
-We benchmark our code thoroughly on three datasets: pascal voc, coco and imagenet-200, using two different network architecture: vgg16 and resnet101. Below are the results:
+I use the pretrained VGG16 and Res-Net 101 provided by [jwyang/faster-rcnn.pytorch](https://github.com/jwyang/faster-rcnn.pytorch)
+They benchmark these two different network architecture: vgg16 and resnet101 on three datasets, including Pascal Voc, COCO and Imagenet-200
+Below are the results:
 
 1). PASCAL VOC 2007 (Train/Test: 07trainval/07test, scale=600, ROI Align)
 
