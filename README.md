@@ -28,25 +28,6 @@ In the implementing of [jwyang/faster-rcnn.pytorch](https://github.com/jwyang/fa
 
 * **It is faster**. Based on the above modifications, the training is much faster. We report the training speed on NVIDIA TITAN Xp in the tables below.
 
-### What we are doing and going to do
-
-- [x] Support both python2 and python3 (great thanks to [cclauss](https://github.com/cclauss)).
-- [x] Add deformable pooling layer (mainly supported by [Xander](https://github.com/xanderchf)).
-- [x] Support pytorch-0.4.0 (go to master branch).
-- [x] Support tensorboardX.
-- [x] Support pytorch-1.0 (this branch).
-
-## Other Implementations
-
-* [Feature Pyramid Network (FPN)](https://github.com/jwyang/fpn.pytorch)
-
-* [Mask R-CNN](https://github.com/roytseng-tw/mask-rcnn.pytorch) (~~ongoing~~ already implemented by [roytseng-tw](https://github.com/roytseng-tw))
-
-## Tutorial
-
-* [Blog](http://www.telesens.co/2018/03/11/object-detection-and-classification-using-r-cnns/) by [ankur6ue](https://github.com/ankur6ue)
-
-
 ## Enviroment
 * Python 3.6
 * Pytorch 1.0
@@ -173,7 +154,7 @@ python demo.py --net vgg16 \
 
 Then you will find the detection results in folder $ROOT/images.
 
-**Note the default demo.py merely support pascal_voc categories. You need to change the [line](https://github.com/jwyang/faster-rcnn.pytorch/blob/530f3fdccaa60d05fa068bc2148695211586bd88/demo.py#L156) to adapt your own model.**
+** If you need to apply on different dataset, please change the demp.py, in terms of categories. Note the default demo.py merely support pascal_voc categories. You need to change the [Here] https://github.com/dynotw/Pedestrian-Detection-Faster-R-CNN/blob/master/demo.py#L179) to adapt your own model.**
 
 Below are some detection results:
 
