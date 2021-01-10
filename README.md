@@ -93,24 +93,24 @@ Thanks to [Remi](https://github.com/Cadene) for providing the pretrained detecti
 * Click the links in the above tables to download our pre-trained faster r-cnn models.
 * If not mentioned, the GPU we used is NVIDIA Titan X Pascal (12GB).
 
+## Enviroment
+* Python 3.6 above
+* Pytorch 1.0 above
+* CUDA 8.0 above
+Sorry for the Docker file missed
+
 ## Preparation
 
 
-First of all, clone the code
+Firstly, clone the code
 ```
-git clone https://github.com/jwyang/faster-rcnn.pytorch.git
+git clone https://github.com/dynotw/Pedestrian-Detection-Faster-R-CNN.git
 ```
 
 Then, create a folder:
 ```
 cd faster-rcnn.pytorch && mkdir data
 ```
-
-### prerequisites
-
-* Python 2.7 or 3.6
-* Pytorch 1.0 (for Pytorch 0.4.0 go to master branch)
-* CUDA 8.0 or higher
 
 ### Data Preparation
 
