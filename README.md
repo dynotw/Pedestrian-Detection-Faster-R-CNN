@@ -1,11 +1,10 @@
-# A *Faster* Pytorch Implementation of Faster R-CNN
-# Apply on Pedestrian Detection
+# A Pytorch Implementation of Faster R-CNN Apply on Pedestrian Detection
 
 ## Introduction
 
-### Good news! This repo supports pytorch-1.0 now!!! We borrowed some code and techniques from [maskrcnn-benchmark](https://github.com/facebookresearch/maskrcnn-benchmark).
+### These codes are highly modified from * [jwyang/faster-rcnn.pytorch] (https://github.com/jwyang/faster-rcnn.pytorch) to apply on Pedestrian Detection
 
-This project is a *faster* pytorch implementation of faster R-CNN, aimed to accelerating the training of faster R-CNN object detection models. Recently, there are a number of good implementations:
+Recently, there are a number of useful implementations of Faster R-CNN:
 
 * [rbgirshick/py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn), developed based on Pycaffe + Numpy
 
