@@ -4,16 +4,6 @@
 
 ### These codes are highly based on [jwyang/faster-rcnn.pytorch](https://github.com/jwyang/faster-rcnn.pytorch), and modify it to apply on Pedestrian Detection
 
-Recently, there are a number of useful implementations of Faster R-CNN:
-
-* [rbgirshick/py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn), developed based on Pycaffe + Numpy
-
-* [longcw/faster_rcnn_pytorch](https://github.com/longcw/faster_rcnn_pytorch), developed based on Pytorch + Numpy
-
-* [endernewton/tf-faster-rcnn](https://github.com/endernewton/tf-faster-rcnn), developed based on TensorFlow + Numpy
-
-* [ruotianluo/pytorch-faster-rcnn](https://github.com/ruotianluo/pytorch-faster-rcnn), developed based on Pytorch + TensorFlow + Numpy
-
 In the implementing of [jwyang/faster-rcnn.pytorch](https://github.com/jwyang/faster-rcnn.pytorch), there're several unique and new features compared with the above implementations:
 
 * **It is pure Pytorch code**. We convert all the numpy implementations to pytorch!
@@ -154,12 +144,12 @@ python demo.py --net vgg16 \
 
 Then you will find the detection results in folder $ROOT/images.
 
-** If you need to apply on different dataset, please change the demp.py, especially [Here](https://github.com/dynotw/Pedestrian-Detection-Faster-R-CNN/blob/master/demo.py#L179) in terms of categories. [Here](https://github.com/dynotw/Pedestrian-Detection-Faster-R-CNN/blob/master/demo.py#L179)**
+** If you need to apply on different dataset, please change the demp.py, especially [Here](https://github.com/dynotw/Pedestrian-Detection-Faster-R-CNN/blob/master/demo.py#L179) in terms of categories.**
 
 Below are some detection results:
 
 <div style="color:#0000FF" align="center">
-<img src="images/img3_det_res101.jpg" width="430"/> <img src="images/img4_det_res101.jpg" width="430"/>
+<img src="images/1.jpg" width="430"/> <img src="images/2.jpg" width="430"/>
 </div>
 
 ## Webcam Demo
