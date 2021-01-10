@@ -97,11 +97,10 @@ Thanks to [Remi](https://github.com/Cadene) for providing the pretrained detecti
 * Python 3.6 above
 * Pytorch 1.0 above
 * CUDA 8.0 above
+
 Sorry for the Docker file missed
 
 ## Preparation
-
-
 Firstly, clone the code
 ```
 git clone https://github.com/dynotw/Pedestrian-Detection-Faster-R-CNN.git
